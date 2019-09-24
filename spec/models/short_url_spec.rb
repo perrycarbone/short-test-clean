@@ -49,6 +49,7 @@ RSpec.describe ShortUrl, type: :model do
 
     it "fetches the title" do
       short_url.update_title!
+      short_url.reload
       expect(short_url.title).to eq("Frequently Asked Questions | BeenVerified")
     end
 
