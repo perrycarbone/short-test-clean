@@ -12,5 +12,4 @@ RSpec.describe UpdateTitleJob, type: :job do
     short_url.reload
     expect(short_url.title).to eq("Frequently Asked Questions | BeenVerified")
   end
-
 end
